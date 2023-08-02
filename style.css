@@ -1,0 +1,28 @@
+.container
+{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addrs
+{
+    font-size: 1.5rem;
+    margin: 0px auto;
+    
+}
+#locate
+{
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+}
+.btn
+{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
