@@ -1,4 +1,4 @@
-const table = document.getElementById('students');
+const table = document.getElementById('contents');
 const btn_loc = document.getElementById('locate');
 const txtbox = document.getElementById('addrs');
 console.log(btn_loc);
@@ -19,6 +19,9 @@ function onSuccess(position)
         {
             txtbox.innerHTML += obj+"--->"+details[obj];
             txtbox.innerHTML+="|  ";
+            let row = '<tr><td>'+obj+'</td><td>'+details[obj]+'</td></tr>';
+            table.innerHTML+=row;
+            
         }
     })
 }
