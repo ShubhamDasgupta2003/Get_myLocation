@@ -14,7 +14,12 @@ function onSuccess(position)
         let details = result.results[0].components;
         let {county,country,postcode} = details;
         // console.log(county,country,postcode);
-        txtbox.innerHTML = county +' '+ country + ' '+postcode;
+        console.log(details);
+        for(obj in details)
+        {
+            txtbox.innerHTML += obj+"--->"+details[obj];
+            txtbox.innerHTML+="|  ";
+        }
     })
 }
 
